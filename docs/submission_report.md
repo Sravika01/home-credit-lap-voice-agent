@@ -28,10 +28,11 @@ Customer (web test call) ⇄ Retell AI (STT + TTS + call transcript) ⇄ LLM wit
                                    └─ post-call extraction: call_outcome, callback time, 7 data points
 ```
 
-There's no custom backend. All logic is in the system prompt, and Retell handles speech, recordings, and transcripts.
+There's no custom telephony backend. All voice logic is in the system prompt, and Retell handles speech, telephony, recordings, and transcripts. An auxiliary standalone Flask demo (`app.py`) is provided for testing the eligibility business rules in a web browser.
 
 - Platform: Retell AI, single prompt agent (configured)
 - LLM / voice / STT: Not recorded in the test report
+- Web demo: Standalone Flask prototype (`app.py`) deployable via Gunicorn/Docker on Render or Railway
 
 ## 3. The seven eligibility checks
 

@@ -80,7 +80,7 @@ Counts reflect the observed scenarios mapped above, not a claim that every scrip
 | Layer | Test Type | Coverage | Status & Evidence |
 |---|---|---|---|
 | **Live Retell AI Platform** | Interactive conversational testing (Test Audio & Test LLM) | 11 scenarios (TC-01, TC-02, TC-04, TC-06, TC-07, TC-08, TC-09, TC-11, TC-13, EX-01, EX-02) | 8 Pass, 3 Partial, 1 Fail (initial EX-02). Verified with screenshots: [retell_industrial_property_test.png](../evidence/transcripts/retell_industrial_property_test.png) (failure) and [retell_industrial_property_pass.png](../evidence/transcripts/retell_industrial_property_pass.png) (successful retest). |
-| **Local Automated Suite** | Python unit tests (`tests/test_business_rules.py`) | 27 automated unit tests covering all 7 criteria, boundary conditions, tenure expressions, crore conversions, transfer triggers, qualification gates, and prompt static analysis | 27 / 27 Pass (100% passing). Executed locally via `python3 -m unittest discover tests -v`. |
+| **Local Automated Suite** | Python unit tests (`tests/test_business_rules.py`, `tests/test_app.py`) | 38 automated unit tests (27 business rule & prompt static checks + 11 Flask web demo HTTP/validation checks) | 38 / 38 Pass (100% passing). Executed locally via `python3 -m unittest discover tests -v`. |
 
 ## Failures, Remediations, and Retests
 
