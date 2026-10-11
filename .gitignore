@@ -1,0 +1,22 @@
+# Credentials and local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials*.json
+
+# Unredacted evidence downloads (never commit or submit)
+evidence/_raw/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
